@@ -119,3 +119,5 @@ Project ini menggunakan lisensi MIT.
   <br>
   <sub>Sistem ini dikembangkan dengan dedikasi oleh:
   <br>
+  <b>Achmad Khusnul Yakin, S.Kom.</b></sub>
+</p>
