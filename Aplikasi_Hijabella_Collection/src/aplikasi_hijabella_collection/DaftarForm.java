@@ -17,7 +17,7 @@ import java.security.MessageDigest;
  *
  * @author achmad_khusnul_yakin
  */
-public class DaftarForm extends javax.swing.JFrame {
+public class DaftarForm extends BaseForm {
 
     private boolean password1Terlihat = false;
     private boolean password2Terlihat = false;
@@ -349,6 +349,7 @@ public class DaftarForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Daftar Akun");
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtInputNamaLengkap.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

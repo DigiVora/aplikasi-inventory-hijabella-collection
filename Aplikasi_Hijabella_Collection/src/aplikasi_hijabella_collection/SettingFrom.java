@@ -8,7 +8,7 @@ package aplikasi_hijabella_collection;
  *
  * @author achmad_khusnul_yakin
  */
-public class SettingFrom extends javax.swing.JFrame {
+public class SettingFrom extends BaseForm {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(SettingFrom.class.getName());
 
@@ -49,6 +49,7 @@ public class SettingFrom extends javax.swing.JFrame {
         lblBackgroundSetting = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnDashboard7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -59,6 +60,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnDashboard7.setContentAreaFilled(false);
         btnDashboard7.setFocusPainted(false);
         btnDashboard7.setFocusable(false);
+        btnDashboard7.addActionListener(this::btnDashboard7ActionPerformed);
         getContentPane().add(btnDashboard7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 30));
 
         btnDataProduk7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -69,6 +71,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnDataProduk7.setContentAreaFilled(false);
         btnDataProduk7.setFocusPainted(false);
         btnDataProduk7.setFocusable(false);
+        btnDataProduk7.addActionListener(this::btnDataProduk7ActionPerformed);
         getContentPane().add(btnDataProduk7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 110, 20));
 
         btnDataSupplier7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -79,6 +82,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnDataSupplier7.setContentAreaFilled(false);
         btnDataSupplier7.setFocusPainted(false);
         btnDataSupplier7.setFocusable(false);
+        btnDataSupplier7.addActionListener(this::btnDataSupplier7ActionPerformed);
         getContentPane().add(btnDataSupplier7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 110, 20));
 
         btnBarangMasuk7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -89,6 +93,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnBarangMasuk7.setContentAreaFilled(false);
         btnBarangMasuk7.setFocusPainted(false);
         btnBarangMasuk7.setFocusable(false);
+        btnBarangMasuk7.addActionListener(this::btnBarangMasuk7ActionPerformed);
         getContentPane().add(btnBarangMasuk7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, 30));
 
         btnBarangKeluar7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -99,6 +104,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnBarangKeluar7.setContentAreaFilled(false);
         btnBarangKeluar7.setFocusPainted(false);
         btnBarangKeluar7.setFocusable(false);
+        btnBarangKeluar7.addActionListener(this::btnBarangKeluar7ActionPerformed);
         getContentPane().add(btnBarangKeluar7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 110, 30));
 
         btnlLaporan7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -109,6 +115,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnlLaporan7.setContentAreaFilled(false);
         btnlLaporan7.setFocusPainted(false);
         btnlLaporan7.setFocusable(false);
+        btnlLaporan7.addActionListener(this::btnlLaporan7ActionPerformed);
         getContentPane().add(btnlLaporan7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 110, 30));
 
         btnSetting7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -119,6 +126,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnSetting7.setContentAreaFilled(false);
         btnSetting7.setFocusPainted(false);
         btnSetting7.setFocusable(false);
+        btnSetting7.addActionListener(this::btnSetting7ActionPerformed);
         getContentPane().add(btnSetting7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 110, 30));
 
         btnAbout7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -129,6 +137,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnAbout7.setContentAreaFilled(false);
         btnAbout7.setFocusPainted(false);
         btnAbout7.setFocusable(false);
+        btnAbout7.addActionListener(this::btnAbout7ActionPerformed);
         getContentPane().add(btnAbout7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 110, 40));
 
         btnLogout7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -139,6 +148,7 @@ public class SettingFrom extends javax.swing.JFrame {
         btnLogout7.setContentAreaFilled(false);
         btnLogout7.setFocusPainted(false);
         btnLogout7.setFocusable(false);
+        btnLogout7.addActionListener(this::btnLogout7ActionPerformed);
         getContentPane().add(btnLogout7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 110, 40));
 
         lblIdUser.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -205,6 +215,7 @@ public class SettingFrom extends javax.swing.JFrame {
         getContentPane().add(lblBackgroundSetting, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRefPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefPasswordActionPerformed
@@ -218,6 +229,51 @@ public class SettingFrom extends javax.swing.JFrame {
     private void btnRefEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefEmailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRefEmailActionPerformed
+
+    private void btnDashboard7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard7ActionPerformed
+        // TODO add your handling code here:
+        dashboard();
+    }//GEN-LAST:event_btnDashboard7ActionPerformed
+
+    private void btnDataProduk7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProduk7ActionPerformed
+        // TODO add your handling code here:
+        dataProduk();
+    }//GEN-LAST:event_btnDataProduk7ActionPerformed
+
+    private void btnDataSupplier7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplier7ActionPerformed
+        // TODO add your handling code here:
+        dataSupplier();
+    }//GEN-LAST:event_btnDataSupplier7ActionPerformed
+
+    private void btnBarangMasuk7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasuk7ActionPerformed
+        // TODO add your handling code here:
+        barangMasuk();
+    }//GEN-LAST:event_btnBarangMasuk7ActionPerformed
+
+    private void btnBarangKeluar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluar7ActionPerformed
+        // TODO add your handling code here:
+        barangKeluar();
+    }//GEN-LAST:event_btnBarangKeluar7ActionPerformed
+
+    private void btnlLaporan7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlLaporan7ActionPerformed
+        // TODO add your handling code here:
+        laporan();
+    }//GEN-LAST:event_btnlLaporan7ActionPerformed
+
+    private void btnSetting7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetting7ActionPerformed
+        // TODO add your handling code here:
+        halamanAktif("Setting");
+    }//GEN-LAST:event_btnSetting7ActionPerformed
+
+    private void btnAbout7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbout7ActionPerformed
+        // TODO add your handling code here:
+        about();
+    }//GEN-LAST:event_btnAbout7ActionPerformed
+
+    private void btnLogout7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogout7ActionPerformed
+        // TODO add your handling code here:
+        logout();
+    }//GEN-LAST:event_btnLogout7ActionPerformed
 
     /**
      * @param args the command line arguments

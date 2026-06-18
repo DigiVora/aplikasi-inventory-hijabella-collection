@@ -337,6 +337,7 @@ public class LupaPasswordForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Lupa Password");
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnEye1.setForeground(new java.awt.Color(255, 255, 255));

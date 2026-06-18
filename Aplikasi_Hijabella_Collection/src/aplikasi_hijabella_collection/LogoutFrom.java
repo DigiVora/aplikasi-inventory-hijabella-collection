@@ -8,14 +8,14 @@ package aplikasi_hijabella_collection;
  *
  * @author achmad_khusnul_yakin
  */
-public class LogoutForm extends javax.swing.JFrame {
+public class LogoutFrom extends BaseForm {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LogoutForm.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LogoutFrom.class.getName());
 
     /**
      * Creates new form LogoutForm
      */
-    public LogoutForm() {
+    public LogoutFrom() {
         initComponents();
     }
 
@@ -42,6 +42,7 @@ public class LogoutForm extends javax.swing.JFrame {
         lblBackgroundLogout = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -75,6 +76,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnLogout9.setContentAreaFilled(false);
         btnLogout9.setFocusPainted(false);
         btnLogout9.setFocusable(false);
+        btnLogout9.addActionListener(this::btnLogout9ActionPerformed);
         getContentPane().add(btnLogout9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 110, 40));
 
         btnDashboard9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -85,6 +87,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnDashboard9.setContentAreaFilled(false);
         btnDashboard9.setFocusPainted(false);
         btnDashboard9.setFocusable(false);
+        btnDashboard9.addActionListener(this::btnDashboard9ActionPerformed);
         getContentPane().add(btnDashboard9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 30));
 
         btnDataProduk9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -95,6 +98,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnDataProduk9.setContentAreaFilled(false);
         btnDataProduk9.setFocusPainted(false);
         btnDataProduk9.setFocusable(false);
+        btnDataProduk9.addActionListener(this::btnDataProduk9ActionPerformed);
         getContentPane().add(btnDataProduk9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 110, 20));
 
         btnDataSupplier9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -105,6 +109,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnDataSupplier9.setContentAreaFilled(false);
         btnDataSupplier9.setFocusPainted(false);
         btnDataSupplier9.setFocusable(false);
+        btnDataSupplier9.addActionListener(this::btnDataSupplier9ActionPerformed);
         getContentPane().add(btnDataSupplier9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 110, 20));
 
         btnBarangMasuk9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -115,6 +120,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnBarangMasuk9.setContentAreaFilled(false);
         btnBarangMasuk9.setFocusPainted(false);
         btnBarangMasuk9.setFocusable(false);
+        btnBarangMasuk9.addActionListener(this::btnBarangMasuk9ActionPerformed);
         getContentPane().add(btnBarangMasuk9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, 30));
 
         btnBarangKeluar9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -125,6 +131,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnBarangKeluar9.setContentAreaFilled(false);
         btnBarangKeluar9.setFocusPainted(false);
         btnBarangKeluar9.setFocusable(false);
+        btnBarangKeluar9.addActionListener(this::btnBarangKeluar9ActionPerformed);
         getContentPane().add(btnBarangKeluar9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 110, 30));
 
         btnlLaporan9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -135,6 +142,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnlLaporan9.setContentAreaFilled(false);
         btnlLaporan9.setFocusPainted(false);
         btnlLaporan9.setFocusable(false);
+        btnlLaporan9.addActionListener(this::btnlLaporan9ActionPerformed);
         getContentPane().add(btnlLaporan9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 110, 30));
 
         btnSetting9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -145,6 +153,7 @@ public class LogoutForm extends javax.swing.JFrame {
         btnSetting9.setContentAreaFilled(false);
         btnSetting9.setFocusPainted(false);
         btnSetting9.setFocusable(false);
+        btnSetting9.addActionListener(this::btnSetting9ActionPerformed);
         getContentPane().add(btnSetting9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 110, 30));
 
         btnAbout9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -162,6 +171,7 @@ public class LogoutForm extends javax.swing.JFrame {
         getContentPane().add(lblBackgroundLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBatalActionPerformed
@@ -171,11 +181,57 @@ public class LogoutForm extends javax.swing.JFrame {
 
     private void btnBatal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBatal1ActionPerformed
         // TODO add your handling code here:
+        LoadingForm loading = new LoadingForm("Halaman Dashboard", "Dashboard");
+        loading.setVisible(true);
+        loading.mulaiLoading();
+        
+        dispose();
     }//GEN-LAST:event_btnBatal1ActionPerformed
 
     private void btnAbout9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbout9ActionPerformed
         // TODO add your handling code here:
+        about();
     }//GEN-LAST:event_btnAbout9ActionPerformed
+
+    private void btnSetting9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetting9ActionPerformed
+        // TODO add your handling code here:
+        setting();
+    }//GEN-LAST:event_btnSetting9ActionPerformed
+
+    private void btnlLaporan9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlLaporan9ActionPerformed
+        // TODO add your handling code here:
+        laporan();
+    }//GEN-LAST:event_btnlLaporan9ActionPerformed
+
+    private void btnBarangKeluar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluar9ActionPerformed
+        // TODO add your handling code here:
+        barangKeluar();
+    }//GEN-LAST:event_btnBarangKeluar9ActionPerformed
+
+    private void btnBarangMasuk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasuk9ActionPerformed
+        // TODO add your handling code here:
+        barangMasuk();
+    }//GEN-LAST:event_btnBarangMasuk9ActionPerformed
+
+    private void btnDataSupplier9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplier9ActionPerformed
+        // TODO add your handling code here:
+        dataSupplier();
+    }//GEN-LAST:event_btnDataSupplier9ActionPerformed
+
+    private void btnDataProduk9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProduk9ActionPerformed
+        // TODO add your handling code here:
+        dataProduk();
+    }//GEN-LAST:event_btnDataProduk9ActionPerformed
+
+    private void btnDashboard9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard9ActionPerformed
+        // TODO add your handling code here:
+        dashboard();
+    }//GEN-LAST:event_btnDashboard9ActionPerformed
+
+    private void btnLogout9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogout9ActionPerformed
+        // TODO add your handling code here:
+        halamanAktif("Logout");
+    }//GEN-LAST:event_btnLogout9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -199,7 +255,7 @@ public class LogoutForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new LogoutForm().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new LogoutFrom().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

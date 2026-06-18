@@ -8,7 +8,7 @@ package aplikasi_hijabella_collection;
  *
  * @author achmad_khusnul_yakin
  */
-public class AboutFrom extends javax.swing.JFrame {
+public class AboutFrom extends BaseForm {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AboutFrom.class.getName());
 
@@ -51,6 +51,7 @@ public class AboutFrom extends javax.swing.JFrame {
         lblBackgroundAbout = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAllNotification1b.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/icon/notification.png"))); // NOI18N
@@ -70,6 +71,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnDashboard8.setContentAreaFilled(false);
         btnDashboard8.setFocusPainted(false);
         btnDashboard8.setFocusable(false);
+        btnDashboard8.addActionListener(this::btnDashboard8ActionPerformed);
         getContentPane().add(btnDashboard8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 30));
 
         btnDataProduk8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -80,6 +82,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnDataProduk8.setContentAreaFilled(false);
         btnDataProduk8.setFocusPainted(false);
         btnDataProduk8.setFocusable(false);
+        btnDataProduk8.addActionListener(this::btnDataProduk8ActionPerformed);
         getContentPane().add(btnDataProduk8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 110, 20));
 
         btnDataSupplier8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -90,6 +93,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnDataSupplier8.setContentAreaFilled(false);
         btnDataSupplier8.setFocusPainted(false);
         btnDataSupplier8.setFocusable(false);
+        btnDataSupplier8.addActionListener(this::btnDataSupplier8ActionPerformed);
         getContentPane().add(btnDataSupplier8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 110, 20));
 
         btnBarangMasuk8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -100,6 +104,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnBarangMasuk8.setContentAreaFilled(false);
         btnBarangMasuk8.setFocusPainted(false);
         btnBarangMasuk8.setFocusable(false);
+        btnBarangMasuk8.addActionListener(this::btnBarangMasuk8ActionPerformed);
         getContentPane().add(btnBarangMasuk8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, 30));
 
         btnBarangKeluar8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -110,6 +115,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnBarangKeluar8.setContentAreaFilled(false);
         btnBarangKeluar8.setFocusPainted(false);
         btnBarangKeluar8.setFocusable(false);
+        btnBarangKeluar8.addActionListener(this::btnBarangKeluar8ActionPerformed);
         getContentPane().add(btnBarangKeluar8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 110, 30));
 
         btnlLaporan8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -120,6 +126,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnlLaporan8.setContentAreaFilled(false);
         btnlLaporan8.setFocusPainted(false);
         btnlLaporan8.setFocusable(false);
+        btnlLaporan8.addActionListener(this::btnlLaporan8ActionPerformed);
         getContentPane().add(btnlLaporan8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 110, 30));
 
         btnSetting8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -152,6 +159,7 @@ public class AboutFrom extends javax.swing.JFrame {
         btnLogout8.setContentAreaFilled(false);
         btnLogout8.setFocusPainted(false);
         btnLogout8.setFocusable(false);
+        btnLogout8.addActionListener(this::btnLogout8ActionPerformed);
         getContentPane().add(btnLogout8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 110, 40));
 
         lblVersiAplikasi.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -207,15 +215,54 @@ public class AboutFrom extends javax.swing.JFrame {
         getContentPane().add(lblBackgroundAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSetting8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetting8ActionPerformed
         // TODO add your handling code here:
+        new SettingFrom().setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnSetting8ActionPerformed
 
     private void btnAbout8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbout8ActionPerformed
         // TODO add your handling code here:
+        halamanAktif("About");
     }//GEN-LAST:event_btnAbout8ActionPerformed
+
+    private void btnDashboard8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard8ActionPerformed
+        // TODO add your handling code here:
+        dashboard();
+    }//GEN-LAST:event_btnDashboard8ActionPerformed
+
+    private void btnDataProduk8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProduk8ActionPerformed
+        // TODO add your handling code here:
+        dataProduk();
+    }//GEN-LAST:event_btnDataProduk8ActionPerformed
+
+    private void btnDataSupplier8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplier8ActionPerformed
+        // TODO add your handling code here:
+        dataSupplier();
+    }//GEN-LAST:event_btnDataSupplier8ActionPerformed
+
+    private void btnBarangMasuk8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasuk8ActionPerformed
+        // TODO add your handling code here:
+        barangMasuk();
+    }//GEN-LAST:event_btnBarangMasuk8ActionPerformed
+
+    private void btnBarangKeluar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluar8ActionPerformed
+        // TODO add your handling code here:
+        barangKeluar();
+    }//GEN-LAST:event_btnBarangKeluar8ActionPerformed
+
+    private void btnlLaporan8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlLaporan8ActionPerformed
+        // TODO add your handling code here:
+        laporan();
+    }//GEN-LAST:event_btnlLaporan8ActionPerformed
+
+    private void btnLogout8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogout8ActionPerformed
+        // TODO add your handling code here:
+        logout();
+    }//GEN-LAST:event_btnLogout8ActionPerformed
 
     /**
      * @param args the command line arguments

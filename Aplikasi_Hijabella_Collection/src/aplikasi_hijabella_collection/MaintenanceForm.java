@@ -47,6 +47,7 @@ public class MaintenanceForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Maintenance");
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jMaintenanceFitur.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

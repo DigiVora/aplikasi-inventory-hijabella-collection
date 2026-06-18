@@ -103,6 +103,7 @@ public class LoadingForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loading");
         setBackground(new java.awt.Color(96, 60, 17));
+        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(96, 60, 17));
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 566));

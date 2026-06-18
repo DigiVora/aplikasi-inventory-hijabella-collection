@@ -8,7 +8,7 @@ package aplikasi_hijabella_collection;
  *
  * @author achmad_khusnul_yakin
  */
-public class DashboardFrom extends javax.swing.JFrame {
+public class DashboardFrom extends BaseForm {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DashboardFrom.class.getName());
 
@@ -70,6 +70,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnAllNotification1a.setRequestFocusEnabled(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnDashboard1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -80,6 +81,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnDashboard1.setContentAreaFilled(false);
         btnDashboard1.setFocusPainted(false);
         btnDashboard1.setFocusable(false);
+        btnDashboard1.addActionListener(this::btnDashboard1ActionPerformed);
         getContentPane().add(btnDashboard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 30));
 
         btnDataProduk1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -90,6 +92,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnDataProduk1.setContentAreaFilled(false);
         btnDataProduk1.setFocusPainted(false);
         btnDataProduk1.setFocusable(false);
+        btnDataProduk1.addActionListener(this::btnDataProduk1ActionPerformed);
         getContentPane().add(btnDataProduk1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 110, 20));
 
         btnDataSupplier1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -100,6 +103,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnDataSupplier1.setContentAreaFilled(false);
         btnDataSupplier1.setFocusPainted(false);
         btnDataSupplier1.setFocusable(false);
+        btnDataSupplier1.addActionListener(this::btnDataSupplier1ActionPerformed);
         getContentPane().add(btnDataSupplier1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 110, 20));
 
         btnBarangMasuk1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -110,6 +114,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnBarangMasuk1.setContentAreaFilled(false);
         btnBarangMasuk1.setFocusPainted(false);
         btnBarangMasuk1.setFocusable(false);
+        btnBarangMasuk1.addActionListener(this::btnBarangMasuk1ActionPerformed);
         getContentPane().add(btnBarangMasuk1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, 30));
 
         btnBarangKeluar1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -120,6 +125,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnBarangKeluar1.setContentAreaFilled(false);
         btnBarangKeluar1.setFocusPainted(false);
         btnBarangKeluar1.setFocusable(false);
+        btnBarangKeluar1.addActionListener(this::btnBarangKeluar1ActionPerformed);
         getContentPane().add(btnBarangKeluar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 110, 30));
 
         btnlLaporan1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -130,6 +136,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnlLaporan1.setContentAreaFilled(false);
         btnlLaporan1.setFocusPainted(false);
         btnlLaporan1.setFocusable(false);
+        btnlLaporan1.addActionListener(this::btnlLaporan1ActionPerformed);
         getContentPane().add(btnlLaporan1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 110, 30));
 
         btnSetting1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -162,6 +169,7 @@ public class DashboardFrom extends javax.swing.JFrame {
         btnLogout1.setContentAreaFilled(false);
         btnLogout1.setFocusPainted(false);
         btnLogout1.setFocusable(false);
+        btnLogout1.addActionListener(this::btnLogout1ActionPerformed);
         getContentPane().add(btnLogout1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 110, 40));
 
         lblBarangKeluar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -288,14 +296,17 @@ public class DashboardFrom extends javax.swing.JFrame {
         getContentPane().add(lblBackgroundDashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSetting1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetting1ActionPerformed
         // TODO add your handling code here:
+        setting();
     }//GEN-LAST:event_btnSetting1ActionPerformed
 
     private void btnAbout1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbout1ActionPerformed
         // TODO add your handling code here:
+        about();
     }//GEN-LAST:event_btnAbout1ActionPerformed
 
     private void btnNextPage1bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextPage1bActionPerformed
@@ -305,6 +316,41 @@ public class DashboardFrom extends javax.swing.JFrame {
     private void btnBackPage1bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackPage1bActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackPage1bActionPerformed
+
+    private void btnDashboard1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard1ActionPerformed
+        // TODO add your handling code here:
+        halamanAktif("Dashboard");
+    }//GEN-LAST:event_btnDashboard1ActionPerformed
+
+    private void btnDataProduk1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProduk1ActionPerformed
+        // TODO add your handling code here:
+        dataProduk();
+    }//GEN-LAST:event_btnDataProduk1ActionPerformed
+
+    private void btnDataSupplier1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplier1ActionPerformed
+        // TODO add your handling code here:
+        dataSupplier();
+    }//GEN-LAST:event_btnDataSupplier1ActionPerformed
+
+    private void btnBarangMasuk1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasuk1ActionPerformed
+        // TODO add your handling code here:
+        barangMasuk();
+    }//GEN-LAST:event_btnBarangMasuk1ActionPerformed
+
+    private void btnBarangKeluar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluar1ActionPerformed
+        // TODO add your handling code here:
+        barangKeluar();
+    }//GEN-LAST:event_btnBarangKeluar1ActionPerformed
+
+    private void btnlLaporan1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlLaporan1ActionPerformed
+        // TODO add your handling code here:
+        laporan();
+    }//GEN-LAST:event_btnlLaporan1ActionPerformed
+
+    private void btnLogout1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogout1ActionPerformed
+        // TODO add your handling code here:
+        logout();
+    }//GEN-LAST:event_btnLogout1ActionPerformed
 
     /**
      * @param args the command line arguments

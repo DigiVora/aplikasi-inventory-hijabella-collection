@@ -8,14 +8,14 @@ package aplikasi_hijabella_collection;
  *
  * @author achmad_khusnul_yakin
  */
-public class DataProdukForm extends javax.swing.JFrame {
+public class DataProdukFrom extends BaseForm {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DataProdukForm.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DataProdukFrom.class.getName());
 
     /**
      * Creates new form DataProdukForm
      */
-    public DataProdukForm() {
+    public DataProdukFrom() {
         initComponents();
     }
 
@@ -51,6 +51,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         lblBackgroundDataProduk = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnDashboard2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -61,6 +62,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnDashboard2.setContentAreaFilled(false);
         btnDashboard2.setFocusPainted(false);
         btnDashboard2.setFocusable(false);
+        btnDashboard2.addActionListener(this::btnDashboard2ActionPerformed);
         getContentPane().add(btnDashboard2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 110, 30));
 
         btnDataProduk2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -82,6 +84,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnDataSupplier2.setContentAreaFilled(false);
         btnDataSupplier2.setFocusPainted(false);
         btnDataSupplier2.setFocusable(false);
+        btnDataSupplier2.addActionListener(this::btnDataSupplier2ActionPerformed);
         getContentPane().add(btnDataSupplier2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 110, 20));
 
         btnBarangMasuk2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -92,6 +95,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnBarangMasuk2.setContentAreaFilled(false);
         btnBarangMasuk2.setFocusPainted(false);
         btnBarangMasuk2.setFocusable(false);
+        btnBarangMasuk2.addActionListener(this::btnBarangMasuk2ActionPerformed);
         getContentPane().add(btnBarangMasuk2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, 30));
 
         btnBarangKeluar2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -102,6 +106,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnBarangKeluar2.setContentAreaFilled(false);
         btnBarangKeluar2.setFocusPainted(false);
         btnBarangKeluar2.setFocusable(false);
+        btnBarangKeluar2.addActionListener(this::btnBarangKeluar2ActionPerformed);
         getContentPane().add(btnBarangKeluar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 110, 30));
 
         btnlLaporan2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -112,6 +117,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnlLaporan2.setContentAreaFilled(false);
         btnlLaporan2.setFocusPainted(false);
         btnlLaporan2.setFocusable(false);
+        btnlLaporan2.addActionListener(this::btnlLaporan2ActionPerformed);
         getContentPane().add(btnlLaporan2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 110, 30));
 
         btnSetting2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -144,6 +150,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         btnLogout2.setContentAreaFilled(false);
         btnLogout2.setFocusPainted(false);
         btnLogout2.setFocusable(false);
+        btnLogout2.addActionListener(this::btnLogout2ActionPerformed);
         getContentPane().add(btnLogout2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 110, 40));
 
         cbAllKategori.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -254,18 +261,22 @@ public class DataProdukForm extends javax.swing.JFrame {
         getContentPane().add(lblBackgroundDataProduk, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDataProduk2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProduk2ActionPerformed
         // TODO add your handling code here:
+        halamanAktif("Data Produk");
     }//GEN-LAST:event_btnDataProduk2ActionPerformed
 
     private void btnSetting2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetting2ActionPerformed
         // TODO add your handling code here:
+        setting();
     }//GEN-LAST:event_btnSetting2ActionPerformed
 
     private void btnAbout2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbout2ActionPerformed
         // TODO add your handling code here:
+        about();
     }//GEN-LAST:event_btnAbout2ActionPerformed
 
     private void cbAllKategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbAllKategoriActionPerformed
@@ -287,6 +298,36 @@ public class DataProdukForm extends javax.swing.JFrame {
     private void btnNextPage1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextPage1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnNextPage1ActionPerformed
+
+    private void btnDashboard2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard2ActionPerformed
+        // TODO add your handling code here:
+        dashboard();
+    }//GEN-LAST:event_btnDashboard2ActionPerformed
+
+    private void btnDataSupplier2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplier2ActionPerformed
+        // TODO add your handling code here:
+        dataSupplier();
+    }//GEN-LAST:event_btnDataSupplier2ActionPerformed
+
+    private void btnBarangMasuk2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasuk2ActionPerformed
+        // TODO add your handling code here:
+        barangMasuk();
+    }//GEN-LAST:event_btnBarangMasuk2ActionPerformed
+
+    private void btnBarangKeluar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluar2ActionPerformed
+        // TODO add your handling code here:
+        barangKeluar();
+    }//GEN-LAST:event_btnBarangKeluar2ActionPerformed
+
+    private void btnlLaporan2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlLaporan2ActionPerformed
+        // TODO add your handling code here:
+        laporan();
+    }//GEN-LAST:event_btnlLaporan2ActionPerformed
+
+    private void btnLogout2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogout2ActionPerformed
+        // TODO add your handling code here:
+        logout();
+    }//GEN-LAST:event_btnLogout2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,7 +351,7 @@ public class DataProdukForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new DataProdukForm().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new DataProdukFrom().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
