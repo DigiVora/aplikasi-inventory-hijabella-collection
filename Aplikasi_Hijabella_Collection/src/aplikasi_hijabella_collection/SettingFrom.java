@@ -221,14 +221,35 @@ public class SettingFrom extends BaseForm {
 
     private void btnRefPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefPasswordActionPerformed
         // TODO add your handling code here:
+        LoadingForm loading
+                = new LoadingForm("Halaman Lupa Password", "LupaPassword");
+
+        loading.setVisible(true);
+        loading.mulaiLoading();
+
+        this.dispose();
     }//GEN-LAST:event_btnRefPasswordActionPerformed
 
     private void btnRefWhatshAppActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefWhatshAppActionPerformed
         // TODO add your handling code here:
+        LoadingForm loading
+                = new LoadingForm("Halaman Ubah WhatshApp", "UbahWhatshApp");
+
+        loading.setVisible(true);
+        loading.mulaiLoading();
+
+        this.dispose();
     }//GEN-LAST:event_btnRefWhatshAppActionPerformed
 
     private void btnRefEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefEmailActionPerformed
         // TODO add your handling code here:
+        LoadingForm loading
+                = new LoadingForm("Halaman Ubah Email", "UbahEmail");
+
+        loading.setVisible(true);
+        loading.mulaiLoading();
+
+        this.dispose();
     }//GEN-LAST:event_btnRefEmailActionPerformed
 
     private void btnDashboard7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboard7ActionPerformed

@@ -57,6 +57,20 @@ public class BaseForm extends JFrame {
         new LogoutFrom().setVisible(true);
         dispose();
     }
+    protected void LupaPasword(){
+        new LupaPasswordForm().setVisible(true);
+        dispose();
+    }
+    
+    protected void UbahEmail() {
+        new UbahEmailForm().setVisible(true);
+        dispose();
+    }
+    
+    protected void UbahWhatshApp() {
+        new UbahWhatshAppFrom().setVisible(true);
+        dispose();
+    }
 
     protected void halamanAktif(String halaman) {
 

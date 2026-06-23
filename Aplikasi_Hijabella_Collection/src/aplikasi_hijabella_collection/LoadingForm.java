@@ -72,6 +72,17 @@ public class LoadingForm extends javax.swing.JFrame {
                     LupaPasswordForm LpForm = new LupaPasswordForm();
                     LpForm.setVisible(true);
 
+                } else if (tujuan.equals("UbahEmail")) {
+                    UbahEmailForm UeFrom = new UbahEmailForm();
+                    UeFrom.setVisible(true);
+                
+                } else if (tujuan.equals("UbahWhatshApp")) {
+                    UbahWhatshAppFrom UwFrom = new UbahWhatshAppFrom();
+                    UwFrom.setVisible(true);
+                    
+                } else if (tujuan.equals("Setting")) {
+                    SettingFrom SFrom = new SettingFrom();
+                    SFrom.setVisible(true);
                 }
 
                 dispose();

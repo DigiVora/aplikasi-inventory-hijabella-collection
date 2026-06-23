@@ -480,7 +480,7 @@ public class DaftarForm extends BaseForm {
         getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 506, 40, 20));
 
         lblBackgroundDaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/background/daftarakun.png"))); // NOI18N
-        getContentPane().add(lblBackgroundDaftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(lblBackgroundDaftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         pack();
         setLocationRelativeTo(null);

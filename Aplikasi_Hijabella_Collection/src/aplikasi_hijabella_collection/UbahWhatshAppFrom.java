@@ -98,7 +98,7 @@ public class UbahWhatshAppFrom extends javax.swing.JFrame {
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
         LoadingForm loading
-        = new LoadingForm("Membuka Halaman Login", "Login");
+        = new LoadingForm("Membuka Halaman Setting", "Setting");
 
         loading.setVisible(true);
         loading.mulaiLoading();

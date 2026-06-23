@@ -98,7 +98,7 @@ public class UbahEmailForm extends javax.swing.JFrame {
     private void btnKembali2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembali2ActionPerformed
         // TODO add your handling code here:
         LoadingForm loading
-        = new LoadingForm("Membuka Halaman Login", "Login");
+        = new LoadingForm("Membuka Halaman Setting", "Setting");
 
         loading.setVisible(true);
         loading.mulaiLoading();
