@@ -55,6 +55,7 @@ public class LaporanFrom extends BaseForm {
         lblBackgroundLaporan = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Laporan");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -182,7 +183,7 @@ public class LaporanFrom extends BaseForm {
         txtTanggalAkhir.setBorder(null);
         txtTanggalAkhir.setFocusable(false);
         txtTanggalAkhir.setRequestFocusEnabled(false);
-        getContentPane().add(txtTanggalAkhir, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 90, -1));
+        getContentPane().add(txtTanggalAkhir, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 226, 90, 20));
 
         lblKalender3a.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/icon/kalender 20px.png"))); // NOI18N
         getContentPane().add(lblKalender3a, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, 20));
@@ -192,16 +193,16 @@ public class LaporanFrom extends BaseForm {
         txtTanggalAwal.setBorder(null);
         txtTanggalAwal.setFocusable(false);
         txtTanggalAwal.setRequestFocusEnabled(false);
-        getContentPane().add(txtTanggalAwal, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 90, -1));
+        getContentPane().add(txtTanggalAwal, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 226, 90, 20));
 
         lblKalender3b.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/icon/kalender 20px.png"))); // NOI18N
-        getContentPane().add(lblKalender3b, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, -1, 20));
+        getContentPane().add(lblKalender3b, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, 20, 20));
 
         cbJenisLaporan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lihat Semua", "Data Barang", "Data Stok" }));
         cbJenisLaporan.setBorder(null);
         cbJenisLaporan.setFocusable(false);
         cbJenisLaporan.setRequestFocusEnabled(false);
-        getContentPane().add(cbJenisLaporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 230, 110, 20));
+        getContentPane().add(cbJenisLaporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 140, 30));
 
         btnAllNotificationx7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/icon/notification.png"))); // NOI18N
         btnAllNotificationx7.setBorder(null);
@@ -243,6 +244,11 @@ public class LaporanFrom extends BaseForm {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null}
             },
             new String [] {
@@ -264,9 +270,11 @@ public class LaporanFrom extends BaseForm {
                 return canEdit [columnIndex];
             }
         });
+        jtAllLaporan.setPreferredSize(new java.awt.Dimension(528, 210));
+        jtAllLaporan.setRowHeight(22);
         jScrollPane1.setViewportView(jtAllLaporan);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 250, 750, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 250, 750, 200));
 
         lblBackgroundLaporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/background/laporan.png"))); // NOI18N
         getContentPane().add(lblBackgroundLaporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

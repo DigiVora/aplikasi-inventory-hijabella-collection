@@ -56,6 +56,7 @@ public class BarangKeluarFrom extends BaseForm {
         lblBackgroundBarangKeluar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Barang Keluar");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -179,7 +180,7 @@ public class BarangKeluarFrom extends BaseForm {
         cbKodeBarang2.setBorder(null);
         cbKodeBarang2.setFocusable(false);
         cbKodeBarang2.setRequestFocusEnabled(false);
-        getContentPane().add(cbKodeBarang2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 250, 230, 10));
+        getContentPane().add(cbKodeBarang2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 240, 250, 30));
 
         txtMasukkanNamaBarang2.setBackground(new java.awt.Color(250, 245, 241));
         txtMasukkanNamaBarang2.setForeground(new java.awt.Color(153, 153, 153));
@@ -187,14 +188,14 @@ public class BarangKeluarFrom extends BaseForm {
         txtMasukkanNamaBarang2.setBorder(null);
         txtMasukkanNamaBarang2.setFocusable(false);
         txtMasukkanNamaBarang2.setRequestFocusEnabled(false);
-        getContentPane().add(txtMasukkanNamaBarang2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 296, 230, 20));
+        getContentPane().add(txtMasukkanNamaBarang2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 290, 250, 30));
 
         txtMasukkanJumlahKeluar2.setForeground(new java.awt.Color(153, 153, 153));
         txtMasukkanJumlahKeluar2.setText("Masukkan Jumlah Keluar");
         txtMasukkanJumlahKeluar2.setBorder(null);
         txtMasukkanJumlahKeluar2.setFocusable(false);
         txtMasukkanJumlahKeluar2.setRequestFocusEnabled(false);
-        getContentPane().add(txtMasukkanJumlahKeluar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 230, -1));
+        getContentPane().add(txtMasukkanJumlahKeluar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 346, 250, 30));
 
         txtMasukkanTanggal2.setForeground(new java.awt.Color(153, 153, 153));
         txtMasukkanTanggal2.setText("17/06/2026");
@@ -228,6 +229,7 @@ public class BarangKeluarFrom extends BaseForm {
         btnReset2.setRequestFocusEnabled(false);
         getContentPane().add(btnReset2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 70, 30));
 
+        jtBarangKeluar.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jtBarangKeluar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -289,10 +291,10 @@ public class BarangKeluarFrom extends BaseForm {
         txtMasukkanKeterangan.setBorder(null);
         txtMasukkanKeterangan.setFocusable(false);
         txtMasukkanKeterangan.setRequestFocusEnabled(false);
-        getContentPane().add(txtMasukkanKeterangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 454, 230, -1));
+        getContentPane().add(txtMasukkanKeterangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, 250, 30));
 
         lblBackgroundBarangKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/background/barangkeluar.png"))); // NOI18N
-        getContentPane().add(lblBackgroundBarangKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(lblBackgroundBarangKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, -1, 570));
 
         pack();
         setLocationRelativeTo(null);

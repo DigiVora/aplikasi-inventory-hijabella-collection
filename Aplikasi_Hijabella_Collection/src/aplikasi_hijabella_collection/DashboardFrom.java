@@ -70,6 +70,7 @@ public class DashboardFrom extends BaseForm {
         btnAllNotification1a.setRequestFocusEnabled(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Dashboard");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

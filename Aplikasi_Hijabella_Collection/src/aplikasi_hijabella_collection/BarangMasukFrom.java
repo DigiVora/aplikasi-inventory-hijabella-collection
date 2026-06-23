@@ -56,6 +56,7 @@ public class BarangMasukFrom extends BaseForm {
         lblBackgroundBarangMasuk = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Barang Keluar");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -184,6 +185,7 @@ public class BarangMasukFrom extends BaseForm {
         btnSimpanData.setFocusPainted(false);
         btnSimpanData.setFocusable(false);
         btnSimpanData.setRequestFocusEnabled(false);
+        btnSimpanData.addActionListener(this::btnSimpanDataActionPerformed);
         getContentPane().add(btnSimpanData, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 486, 60, 20));
 
         btnReset.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -200,6 +202,7 @@ public class BarangMasukFrom extends BaseForm {
         lblKalender.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi_hijabella_collection/icon/kalender 20px.png"))); // NOI18N
         getContentPane().add(lblKalender, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 400, -1, 20));
 
+        jtBarangMasuk.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jtBarangMasuk.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -228,6 +231,7 @@ public class BarangMasukFrom extends BaseForm {
             }
         });
         jScrollPane1.setViewportView(jtBarangMasuk);
+        jtBarangMasuk.getAccessibleContext().setAccessibleName("");
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 197, 480, 250));
 
@@ -260,13 +264,13 @@ public class BarangMasukFrom extends BaseForm {
         cbKodeBarang.setBorder(null);
         cbKodeBarang.setFocusable(false);
         cbKodeBarang.setRequestFocusEnabled(false);
-        getContentPane().add(cbKodeBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 250, 220, 10));
+        getContentPane().add(cbKodeBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 240, 250, 30));
 
         cbIDSupplier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SP001" }));
         cbIDSupplier.setBorder(null);
         cbIDSupplier.setFocusable(false);
         cbIDSupplier.setRequestFocusEnabled(false);
-        getContentPane().add(cbIDSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 460, 220, 10));
+        getContentPane().add(cbIDSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, 250, 30));
 
         txtMasukkanNamaBarang.setBackground(new java.awt.Color(250, 245, 241));
         txtMasukkanNamaBarang.setForeground(new java.awt.Color(153, 153, 153));
@@ -349,6 +353,10 @@ public class BarangMasukFrom extends BaseForm {
         // TODO add your handling code here:
         logout();
     }//GEN-LAST:event_btnLogout4ActionPerformed
+
+    private void btnSimpanDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanDataActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSimpanDataActionPerformed
 
     /**
      * @param args the command line arguments

@@ -52,6 +52,7 @@ public class DataSupplierFrom extends BaseForm {
         lblBackgroundDataSupplier = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Data Supplier");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

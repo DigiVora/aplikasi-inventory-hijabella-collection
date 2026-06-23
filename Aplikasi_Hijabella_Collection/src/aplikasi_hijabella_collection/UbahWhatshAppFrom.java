@@ -37,6 +37,7 @@ public class UbahWhatshAppFrom extends javax.swing.JFrame {
         lblBackgroundUbahWhatshApp = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ubah WhatshApp");
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -132,8 +133,6 @@ public class UbahWhatshAppFrom extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKembali;
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnLogin1;
     private javax.swing.JButton btnSimpanWhatshApp;
     private javax.swing.JLabel lblBackgroundUbahWhatshApp;
     private javax.swing.JLabel lblWhatshApp;
