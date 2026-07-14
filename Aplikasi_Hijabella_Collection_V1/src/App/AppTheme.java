@@ -21,19 +21,6 @@ public class AppTheme {
         try {
             /*Frame & Panel Auth*/
             UIManager.setLookAndFeel(new FlatLightLaf());
-            UIManager.put("Button.arc", 15);
-            UIManager.put("Component.arc", 15);
-            UIManager.put("TextComponent.arc", 15);
-            UIManager.put("Button.focusWidth", 0);
-            UIManager.put("Component.focusWidth", 1);
-            UIManager.put("Button.borderWidth", 0);
-            UIManager.put("TextComponent.borderWidth", 1);
-            Color bg = new Color(0xFD, 0xF7, 0xF2);
-            UIManager.put("ComboBox.background", bg);
-            UIManager.put("ComboBox.buttonBackground", bg);
-            UIManager.put("ComboBox.buttonEditableBackground", bg);
-            UIManager.put("ComboBox.arrowButtonBackground", bg);
-
             /* ============================PANEL DASHBOARD============================ */
             UIManager.put("Panel.background", Color.WHITE);
             UIManager.put("Label.foreground", new Color(45, 45, 45));

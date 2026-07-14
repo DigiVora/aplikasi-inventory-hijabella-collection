@@ -277,6 +277,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Kembali Ke"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKembaliKeActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>

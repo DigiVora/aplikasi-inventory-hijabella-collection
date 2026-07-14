@@ -4,7 +4,9 @@
  */
 package Screens.Master;
 
+import App.AppNavigator;
 import App.AppTheme;
+import Auth.FrameAuth;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
@@ -20,6 +22,7 @@ import Screens.Master.SubMaster.PanelSetting;
 import Screens.Master.SubMaster.PanelAbout;
 import javax.swing.JPanel;
 import Screens.Loading.FrameLoading;
+import Screens.Master.SubMaster.PanelNotifikasi;
 import java.awt.CardLayout;
 
 /**
@@ -43,15 +46,6 @@ public class FrameMaster extends javax.swing.JFrame {
         AppTheme.applyThemeAuth();
         initComponents();
         initMenu();
-        styleMenu(btnDashboard);
-        styleMenu(btnDataProduk);
-        styleMenu(btnDataSupplier);
-        styleMenu(btnBarangMasuk);
-        styleMenu(btnAbout);
-        styleMenu(btnBarangKeluar);
-        styleMenu(btnLaporan);
-        styleMenu(btnSetting);
-        styleMenu(btnLogout);
         panelContent.setLayout(card);
         panelContent.add(new PanelDashboard(), "dashboard");
         panelContent.add(new PanelDataProduk(), "produk");
@@ -61,6 +55,7 @@ public class FrameMaster extends javax.swing.JFrame {
         panelContent.add(new PanelLaporan(), "laporan");
         panelContent.add(new PanelSetting(), "setting");
         panelContent.add(new PanelAbout(), "about");
+        panelContent.add(new PanelNotifikasi(), "notifikasi");
 
         card.show(panelContent, "dashboard");
     }
@@ -74,7 +69,7 @@ public class FrameMaster extends javax.swing.JFrame {
         hoverMenu(btnLaporan);
         hoverMenu(btnSetting);
         hoverMenu(btnAbout);
-        hoverMenu(btnLogout);
+        hoverMenu(btnNotifikasi);
     }
 
     private void styleMenu(JButton btn) {
@@ -104,7 +99,7 @@ public class FrameMaster extends javax.swing.JFrame {
         panelLaporan.setBackground(MENU);
         panelSetting.setBackground(MENU);
         panelAbout.setBackground(MENU);
-        panelLogout.setBackground(MENU);
+        panelNotifikasi.setBackground(MENU);
 
     }
 
@@ -157,29 +152,40 @@ public class FrameMaster extends javax.swing.JFrame {
         panelMenu = new javax.swing.JPanel();
         panelSubMenu = new javax.swing.JPanel();
         panelDashboard = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         btnDashboard = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         panelDataProduk = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         btnDataProduk = new javax.swing.JButton();
         panelSupplier = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         btnDataSupplier = new javax.swing.JButton();
         panelBarangMasuk = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         btnBarangMasuk = new javax.swing.JButton();
         panelBarangKeluar = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         btnBarangKeluar = new javax.swing.JButton();
         panelLaporan = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
         btnLaporan = new javax.swing.JButton();
         panelSetting = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         btnSetting = new javax.swing.JButton();
         panelAbout = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         btnAbout = new javax.swing.JButton();
+        panelNotifikasi = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        btnNotifikasi = new javax.swing.JButton();
         panelLogout = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
         panelContent = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hijabella Collection");
-        setPreferredSize(new java.awt.Dimension(1280, 720));
 
         panelUtama.setPreferredSize(new java.awt.Dimension(1280, 720));
         panelUtama.setLayout(new java.awt.BorderLayout());
@@ -215,126 +221,179 @@ public class FrameMaster extends javax.swing.JFrame {
         panelSubMenu.setBackground(new java.awt.Color(96, 60, 17));
 
         panelDashboard.setBackground(new java.awt.Color(96, 60, 17));
-        panelDashboard.setLayout(new java.awt.BorderLayout());
+        panelDashboard.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-beranda-26.png"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelDashboard.add(jLabel1);
 
         btnDashboard.setBackground(new java.awt.Color(96, 60, 17));
         btnDashboard.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDashboard.setForeground(new java.awt.Color(201, 160, 160));
-        btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-beranda-26.png"))); // NOI18N
         btnDashboard.setText("Dashboard");
         btnDashboard.setBorderPainted(false);
         btnDashboard.setIconTextGap(10);
         btnDashboard.setPreferredSize(new java.awt.Dimension(81, 30));
         btnDashboard.addActionListener(this::btnDashboardActionPerformed);
-        panelDashboard.add(btnDashboard, java.awt.BorderLayout.CENTER);
+        panelDashboard.add(btnDashboard);
 
         panelDataProduk.setBackground(new java.awt.Color(96, 60, 17));
-        panelDataProduk.setLayout(new java.awt.BorderLayout());
+        panelDataProduk.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-data-produk-26.png"))); // NOI18N
+        jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 27, 1, 1));
+        panelDataProduk.add(jLabel3);
 
         btnDataProduk.setBackground(new java.awt.Color(96, 60, 17));
         btnDataProduk.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDataProduk.setForeground(new java.awt.Color(201, 160, 160));
-        btnDataProduk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-data-produk-26.png"))); // NOI18N
         btnDataProduk.setText("Data Produk");
         btnDataProduk.setBorderPainted(false);
         btnDataProduk.setIconTextGap(10);
         btnDataProduk.setPreferredSize(new java.awt.Dimension(81, 30));
         btnDataProduk.addActionListener(this::btnDataProdukActionPerformed);
-        panelDataProduk.add(btnDataProduk, java.awt.BorderLayout.CENTER);
+        panelDataProduk.add(btnDataProduk);
 
         panelSupplier.setBackground(new java.awt.Color(96, 60, 17));
-        panelSupplier.setLayout(new java.awt.BorderLayout());
+        panelSupplier.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-data-supplier-26.png"))); // NOI18N
+        jLabel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelSupplier.add(jLabel4);
 
         btnDataSupplier.setBackground(new java.awt.Color(96, 60, 17));
         btnDataSupplier.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDataSupplier.setForeground(new java.awt.Color(201, 160, 160));
-        btnDataSupplier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-data-supplier-26.png"))); // NOI18N
         btnDataSupplier.setText("Data Supplier");
         btnDataSupplier.setBorderPainted(false);
         btnDataSupplier.setIconTextGap(10);
         btnDataSupplier.setPreferredSize(new java.awt.Dimension(81, 30));
-        panelSupplier.add(btnDataSupplier, java.awt.BorderLayout.CENTER);
+        btnDataSupplier.addActionListener(this::btnDataSupplierActionPerformed);
+        panelSupplier.add(btnDataSupplier);
 
         panelBarangMasuk.setBackground(new java.awt.Color(96, 60, 17));
-        panelBarangMasuk.setLayout(new java.awt.BorderLayout());
+        panelBarangMasuk.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-barang-masuk-26.png"))); // NOI18N
+        jLabel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 23, 1, 1));
+        panelBarangMasuk.add(jLabel5);
 
         btnBarangMasuk.setBackground(new java.awt.Color(96, 60, 17));
         btnBarangMasuk.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnBarangMasuk.setForeground(new java.awt.Color(201, 160, 160));
-        btnBarangMasuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-barang-masuk-26.png"))); // NOI18N
         btnBarangMasuk.setText("Barang Masuk");
         btnBarangMasuk.setBorderPainted(false);
-        btnBarangMasuk.setIconTextGap(10);
+        btnBarangMasuk.setIconTextGap(8);
         btnBarangMasuk.setPreferredSize(new java.awt.Dimension(81, 30));
         btnBarangMasuk.addActionListener(this::btnBarangMasukActionPerformed);
-        panelBarangMasuk.add(btnBarangMasuk, java.awt.BorderLayout.CENTER);
+        panelBarangMasuk.add(btnBarangMasuk);
 
         panelBarangKeluar.setBackground(new java.awt.Color(96, 60, 17));
-        panelBarangKeluar.setLayout(new java.awt.BorderLayout());
+        panelBarangKeluar.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-barang-keluar-26.png"))); // NOI18N
+        jLabel6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelBarangKeluar.add(jLabel6);
 
         btnBarangKeluar.setBackground(new java.awt.Color(96, 60, 17));
         btnBarangKeluar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnBarangKeluar.setForeground(new java.awt.Color(201, 160, 160));
-        btnBarangKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-barang-keluar-26.png"))); // NOI18N
         btnBarangKeluar.setText("Barang Keluar");
         btnBarangKeluar.setBorderPainted(false);
         btnBarangKeluar.setIconTextGap(10);
         btnBarangKeluar.setPreferredSize(new java.awt.Dimension(81, 30));
-        panelBarangKeluar.add(btnBarangKeluar, java.awt.BorderLayout.PAGE_START);
+        btnBarangKeluar.addActionListener(this::btnBarangKeluarActionPerformed);
+        panelBarangKeluar.add(btnBarangKeluar);
 
         panelLaporan.setBackground(new java.awt.Color(96, 60, 17));
-        panelLaporan.setLayout(new java.awt.BorderLayout());
+        panelLaporan.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-laporan-26.png"))); // NOI18N
+        jLabel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelLaporan.add(jLabel7);
 
         btnLaporan.setBackground(new java.awt.Color(96, 60, 17));
         btnLaporan.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnLaporan.setForeground(new java.awt.Color(201, 160, 160));
-        btnLaporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-laporan-26.png"))); // NOI18N
         btnLaporan.setText("Laporan");
         btnLaporan.setBorderPainted(false);
         btnLaporan.setIconTextGap(10);
         btnLaporan.setPreferredSize(new java.awt.Dimension(81, 30));
-        panelLaporan.add(btnLaporan, java.awt.BorderLayout.CENTER);
+        btnLaporan.addActionListener(this::btnLaporanActionPerformed);
+        panelLaporan.add(btnLaporan);
 
         panelSetting.setBackground(new java.awt.Color(96, 60, 17));
-        panelSetting.setLayout(new java.awt.BorderLayout());
+        panelSetting.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-gerigi-26.png"))); // NOI18N
+        jLabel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelSetting.add(jLabel8);
 
         btnSetting.setBackground(new java.awt.Color(96, 60, 17));
         btnSetting.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSetting.setForeground(new java.awt.Color(201, 160, 160));
-        btnSetting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-gerigi-26.png"))); // NOI18N
         btnSetting.setText("Setting");
         btnSetting.setBorderPainted(false);
         btnSetting.setIconTextGap(10);
         btnSetting.setPreferredSize(new java.awt.Dimension(81, 30));
-        panelSetting.add(btnSetting, java.awt.BorderLayout.CENTER);
+        btnSetting.addActionListener(this::btnSettingActionPerformed);
+        panelSetting.add(btnSetting);
 
         panelAbout.setBackground(new java.awt.Color(96, 60, 17));
-        panelAbout.setLayout(new java.awt.BorderLayout());
+        panelAbout.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-about-26.png"))); // NOI18N
+        jLabel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelAbout.add(jLabel9);
 
         btnAbout.setBackground(new java.awt.Color(96, 60, 17));
         btnAbout.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnAbout.setForeground(new java.awt.Color(201, 160, 160));
-        btnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-about-26.png"))); // NOI18N
         btnAbout.setText("About");
         btnAbout.setBorderPainted(false);
         btnAbout.setIconTextGap(10);
         btnAbout.setPreferredSize(new java.awt.Dimension(81, 30));
         btnAbout.addActionListener(this::btnAboutActionPerformed);
-        panelAbout.add(btnAbout, java.awt.BorderLayout.CENTER);
+        panelAbout.add(btnAbout);
+
+        panelNotifikasi.setBackground(new java.awt.Color(96, 60, 17));
+        panelNotifikasi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelNotifikasiMouseClicked(evt);
+            }
+        });
+        panelNotifikasi.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-notification-20.png"))); // NOI18N
+        jLabel10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 28, 1, 1));
+        panelNotifikasi.add(jLabel10);
+
+        btnNotifikasi.setBackground(new java.awt.Color(96, 60, 17));
+        btnNotifikasi.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnNotifikasi.setForeground(new java.awt.Color(201, 160, 160));
+        btnNotifikasi.setText("Notifikasi");
+        btnNotifikasi.setBorderPainted(false);
+        btnNotifikasi.setIconTextGap(14);
+        btnNotifikasi.setPreferredSize(new java.awt.Dimension(81, 30));
+        btnNotifikasi.addActionListener(this::btnNotifikasiActionPerformed);
+        panelNotifikasi.add(btnNotifikasi);
 
         panelLogout.setBackground(new java.awt.Color(96, 60, 17));
-        panelLogout.setLayout(new java.awt.BorderLayout());
+        panelLogout.setLayout(new java.awt.GridLayout(1, 2, -155, 0));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-logout-26.png"))); // NOI18N
+        jLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 25, 1, 1));
+        panelLogout.add(jLabel11);
 
         btnLogout.setBackground(new java.awt.Color(96, 60, 17));
         btnLogout.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnLogout.setForeground(new java.awt.Color(201, 160, 160));
-        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Icon/icons8-logout-26.png"))); // NOI18N
         btnLogout.setText("Logout");
         btnLogout.setBorderPainted(false);
         btnLogout.setIconTextGap(10);
         btnLogout.setPreferredSize(new java.awt.Dimension(81, 30));
         btnLogout.addActionListener(this::btnLogoutActionPerformed);
-        panelLogout.add(btnLogout, java.awt.BorderLayout.CENTER);
+        panelLogout.add(btnLogout);
 
         javax.swing.GroupLayout panelSubMenuLayout = new javax.swing.GroupLayout(panelSubMenu);
         panelSubMenu.setLayout(panelSubMenuLayout);
@@ -350,9 +409,10 @@ public class FrameMaster extends javax.swing.JFrame {
                     .addComponent(panelBarangKeluar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelBarangMasuk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelAbout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelNotifikasi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelSetting, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelLaporan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(panelLaporan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         panelSubMenuLayout.setVerticalGroup(
@@ -376,8 +436,10 @@ public class FrameMaster extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelAbout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(panelNotifikasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelLogout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(207, Short.MAX_VALUE))
+                .addContainerGap(165, Short.MAX_VALUE))
         );
 
         panelMenu.add(panelSubMenu, java.awt.BorderLayout.CENTER);
@@ -399,16 +461,28 @@ public class FrameMaster extends javax.swing.JFrame {
 
     private void btnAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAboutActionPerformed
         // TODO add your handling code here:
+        card.show(panelContent, "about");
     }//GEN-LAST:event_btnAboutActionPerformed
 
     private void btnBarangMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangMasukActionPerformed
         // TODO add your handling code here:
+        card.show(panelContent, "barangmasuk");
     }//GEN-LAST:event_btnBarangMasukActionPerformed
 
     private void btnDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboardActionPerformed
         // TODO add your handling code here:
         card.show(panelContent, "dashboard");
     }//GEN-LAST:event_btnDashboardActionPerformed
+
+    private void btnNotifikasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotifikasiActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "notifikasi");
+    }//GEN-LAST:event_btnNotifikasiActionPerformed
+
+    private void btnDataProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProdukActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "produk");
+    }//GEN-LAST:event_btnDataProdukActionPerformed
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         // TODO add your handling code here:
@@ -425,10 +499,29 @@ public class FrameMaster extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnLogoutActionPerformed
 
-    private void btnDataProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataProdukActionPerformed
+    private void panelNotifikasiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelNotifikasiMouseClicked
         // TODO add your handling code here:
-        card.show(panelContent, "produk");
-    }//GEN-LAST:event_btnDataProdukActionPerformed
+    }//GEN-LAST:event_panelNotifikasiMouseClicked
+
+    private void btnDataSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataSupplierActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "supplier");
+    }//GEN-LAST:event_btnDataSupplierActionPerformed
+
+    private void btnBarangKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBarangKeluarActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "barangkeluar");
+    }//GEN-LAST:event_btnBarangKeluarActionPerformed
+
+    private void btnLaporanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLaporanActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "laporan");
+    }//GEN-LAST:event_btnLaporanActionPerformed
+
+    private void btnSettingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSettingActionPerformed
+        // TODO add your handling code here:
+        card.show(panelContent, "setting");
+    }//GEN-LAST:event_btnSettingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -454,8 +547,19 @@ public class FrameMaster extends javax.swing.JFrame {
     private javax.swing.JButton btnDataSupplier;
     private javax.swing.JButton btnLaporan;
     private javax.swing.JButton btnLogout;
+    private javax.swing.JButton btnNotifikasi;
     private javax.swing.JButton btnSetting;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPanel panelAbout;
     private javax.swing.JPanel panelBarangKeluar;
@@ -468,6 +572,7 @@ public class FrameMaster extends javax.swing.JFrame {
     private javax.swing.JPanel panelLogo;
     private javax.swing.JPanel panelLogout;
     private javax.swing.JPanel panelMenu;
+    private javax.swing.JPanel panelNotifikasi;
     private javax.swing.JPanel panelSetting;
     private javax.swing.JPanel panelSubMenu;
     private javax.swing.JPanel panelSupplier;

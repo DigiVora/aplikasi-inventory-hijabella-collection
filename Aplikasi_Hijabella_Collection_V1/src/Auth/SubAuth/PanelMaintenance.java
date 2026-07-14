@@ -4,17 +4,28 @@
  */
 package Auth.SubAuth;
 
+import Auth.FrameAuth;
+
 /**
  *
  * @author achmad_khusnul_yakin
  */
 public class PanelMaintenance extends javax.swing.JPanel {
 
+//    private FrameAuth frameAuth;
+//    private String fitur;
+//    private String kembaliKe;
+
     /**
      * Creates new form PanelMaintenance
      */
-    public PanelMaintenance() {
+    public PanelMaintenance(FrameAuth frameAuth, String fitur,String kembaliKe) {
         initComponents();
+//        this.frameAuth = frameAuth;
+//        this.fitur = fitur;
+//        this.kembaliKe = kembaliKe;
+        lblMaintenanceFitur.setText(fitur);
+        btnKembaliKe.setText("Kembali Ke " + kembaliKe);
     }
 
     /**
@@ -141,6 +152,7 @@ public class PanelMaintenance extends javax.swing.JPanel {
         btnKembaliKe.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnKembaliKe.setForeground(new java.awt.Color(201, 160, 160));
         btnKembaliKe.setText("Kembali Ke");
+        btnKembaliKe.addActionListener(this::btnKembaliKeActionPerformed);
 
         javax.swing.GroupLayout panelFooterLayout = new javax.swing.GroupLayout(panelFooter);
         panelFooter.setLayout(panelFooterLayout);
@@ -185,6 +197,10 @@ public class PanelMaintenance extends javax.swing.JPanel {
 
         add(panelContent, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnKembaliKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliKeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnKembaliKeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

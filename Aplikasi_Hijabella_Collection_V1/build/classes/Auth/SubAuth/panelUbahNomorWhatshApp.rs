@@ -1,2 +1,0 @@
-Auth.SubAuth.PanelUbahNomorWhatshApp
-Auth.SubAuth.PanelUbahNomorWhatshApp$1

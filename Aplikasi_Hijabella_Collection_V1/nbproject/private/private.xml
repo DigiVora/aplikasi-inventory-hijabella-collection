@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/FrameMaster.java</file>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/Auth/SubAuth/PanelLogin.java</file>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/App/AppNavigator.java</file>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/Auth/SubAuth/PanelForgotPassword.java</file>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/App/AppConfig.java</file>
-            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection_Fix/Aplikasi_Hijabella_Collection_V1/src/Screens/Loading/FrameLoading.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/FrameMaster.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/SubMaster/PanelDataProduk.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/SubMaster/PanelDataSupplier.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/SubMaster/PanelAbout.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Screens/Master/SubMaster/PanelNotifikasi.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/App/AppTheme.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Auth/FrameAuth.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Auth/SubAuth/PanelForgotPassword.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/App/AppNavigator.java</file>
+            <file>file:/F:/Brankas/Berkas%20Kuliah/Tugas/Pemrograman%20Lanjutan/Project%20Netbeans/Aplikasi_Hijabella_Collection/Aplikasi_Hijabella_Collection_V1/src/Auth/SubAuth/PanelMaintenance.java</file>
         </group>
     </open-files>
 </project-private>

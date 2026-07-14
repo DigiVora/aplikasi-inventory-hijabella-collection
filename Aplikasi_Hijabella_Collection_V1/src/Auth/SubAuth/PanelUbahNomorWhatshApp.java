@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package Auth.SubAuth;
-import Auth.FrameAuth;
+
 /**
  *
  * @author achmad_khusnul_yakin
@@ -11,12 +11,10 @@ import Auth.FrameAuth;
 public class PanelUbahNomorWhatshApp extends javax.swing.JPanel {
 
     /**
-     * Creates new form PanelLogin
+     * Creates new form PanelUbahNomorWhatshApp
      */
-    private FrameAuth frame;
-    public PanelUbahNomorWhatshApp(FrameAuth frame) {
+    public PanelUbahNomorWhatshApp() {
         initComponents();
-        this.frame = frame;
     }
 
     /**
@@ -51,7 +49,6 @@ public class PanelUbahNomorWhatshApp extends javax.swing.JPanel {
         btnSimpan = new javax.swing.JButton();
         lblUndo = new javax.swing.JLabel();
 
-        setPreferredSize(new java.awt.Dimension(580, 533));
         setLayout(new java.awt.BorderLayout());
 
         panelContentV2.setBackground(new java.awt.Color(253, 247, 242));
@@ -60,7 +57,6 @@ public class PanelUbahNomorWhatshApp extends javax.swing.JPanel {
         panelCenter.setBackground(new java.awt.Color(253, 247, 242));
         panelCenter.setMaximumSize(new java.awt.Dimension(580, 533));
         panelCenter.setMinimumSize(new java.awt.Dimension(580, 533));
-        panelCenter.setPreferredSize(new java.awt.Dimension(580, 533));
 
         panelHeader.setBackground(new java.awt.Color(253, 247, 242));
         panelHeader.setLayout(new javax.swing.BoxLayout(panelHeader, javax.swing.BoxLayout.Y_AXIS));
